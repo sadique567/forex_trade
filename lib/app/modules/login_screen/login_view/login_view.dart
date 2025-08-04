@@ -32,6 +32,7 @@ class LoginView extends GetView<LoginController> {
                     controller: controller.emailController,
                     keyboardType: TextInputType.emailAddress,
                     decoration: InputDecoration(
+                      
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(12),
                       ),
@@ -51,7 +52,9 @@ class LoginView extends GetView<LoginController> {
                       keyboardType: TextInputType.text,
                       controller: controller.passwordController,
                       obscureText: controller.isVisible.value,
+
                       decoration: InputDecoration(
+                        fillColor: Theme.of(context).scaffoldBackgroundColor,
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(12),
                         ),
