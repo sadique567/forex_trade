@@ -1,0 +1,352 @@
+[
+  {
+    "stockName": "Wipro",
+    "stockCurentPrice": "\u20b91807.68",
+    "exchageType": "BSE",
+    "todayProfitLoss": "+121.8",
+    "isUp": true
+  },
+  {
+    "stockName": "TCS",
+    "stockCurentPrice": "\u20b91094.48",
+    "exchageType": "BSE",
+    "todayProfitLoss": "-143.05",
+    "isUp": false
+  },
+  {
+    "stockName": "Infosys",
+    "stockCurentPrice": "\u20b9538.98",
+    "exchageType": "BSE",
+    "todayProfitLoss": "+126.06",
+    "isUp": true
+  },
+  {
+    "stockName": "HDFC Bank",
+    "stockCurentPrice": "\u20b92147.78",
+    "exchageType": "NSE",
+    "todayProfitLoss": "+92.41",
+    "isUp": true
+  },
+  {
+    "stockName": "ICICI Bank",
+    "stockCurentPrice": "\u20b93014.5",
+    "exchageType": "NSE",
+    "todayProfitLoss": "+119.45",
+    "isUp": true
+  },
+  {
+    "stockName": "Reliance",
+    "stockCurentPrice": "\u20b91891.35",
+    "exchageType": "NSE",
+    "todayProfitLoss": "+5.47",
+    "isUp": true
+  },
+  {
+    "stockName": "Tata Motors",
+    "stockCurentPrice": "\u20b91010.29",
+    "exchageType": "NSE",
+    "todayProfitLoss": "-14.78",
+    "isUp": false
+  },
+  {
+    "stockName": "HCL Tech",
+    "stockCurentPrice": "\u20b92725.7",
+    "exchageType": "NSE",
+    "todayProfitLoss": "+38.13",
+    "isUp": true
+  },
+  {
+    "stockName": "Axis Bank",
+    "stockCurentPrice": "\u20b93139.3",
+    "exchageType": "BSE",
+    "todayProfitLoss": "+145.96",
+    "isUp": true
+  },
+  {
+    "stockName": "Bharti Airtel",
+    "stockCurentPrice": "\u20b91746.39",
+    "exchageType": "BSE",
+    "todayProfitLoss": "+30.41",
+    "isUp": true
+  },
+  {
+    "stockName": "Maruti",
+    "stockCurentPrice": "\u20b92187.98",
+    "exchageType": "BSE",
+    "todayProfitLoss": "-68.1",
+    "isUp": false
+  },
+  {
+    "stockName": "SBI",
+    "stockCurentPrice": "\u20b91430.93",
+    "exchageType": "NSE",
+    "todayProfitLoss": "+113.67",
+    "isUp": true
+  },
+  {
+    "stockName": "ONGC",
+    "stockCurentPrice": "\u20b92411.08",
+    "exchageType": "BSE",
+    "todayProfitLoss": "+88.41",
+    "isUp": true
+  },
+  {
+    "stockName": "ITC",
+    "stockCurentPrice": "\u20b9434.62",
+    "exchageType": "NSE",
+    "todayProfitLoss": "+57.08",
+    "isUp": true
+  },
+  {
+    "stockName": "LT",
+    "stockCurentPrice": "\u20b9739.78",
+    "exchageType": "NSE",
+    "todayProfitLoss": "+121.78",
+    "isUp": true
+  },
+  {
+    "stockName": "Tech Mahindra",
+    "stockCurentPrice": "\u20b92331.18",
+    "exchageType": "BSE",
+    "todayProfitLoss": "+72.15",
+    "isUp": true
+  },
+  {
+    "stockName": "Coal India",
+    "stockCurentPrice": "\u20b91515.22",
+    "exchageType": "NSE",
+    "todayProfitLoss": "+129.53",
+    "isUp": true
+  },
+  {
+    "stockName": "Bajaj Finance",
+    "stockCurentPrice": "\u20b92137.54",
+    "exchageType": "NSE",
+    "todayProfitLoss": "+9.95",
+    "isUp": true
+  },
+  {
+    "stockName": "Asian Paints",
+    "stockCurentPrice": "\u20b92384.42",
+    "exchageType": "BSE",
+    "todayProfitLoss": "-56.28",
+    "isUp": false
+  },
+  {
+    "stockName": "Sun Pharma",
+    "stockCurentPrice": "\u20b9260.29",
+    "exchageType": "BSE",
+    "todayProfitLoss": "+138.8",
+    "isUp": true
+  },
+  {
+    "stockName": "Power Grid",
+    "stockCurentPrice": "\u20b92065.85",
+    "exchageType": "BSE",
+    "todayProfitLoss": "+8.87",
+    "isUp": true
+  },
+  {
+    "stockName": "NTPC",
+    "stockCurentPrice": "\u20b92521.55",
+    "exchageType": "NSE",
+    "todayProfitLoss": "-61.54",
+    "isUp": false
+  },
+  {
+    "stockName": "Adani Ports",
+    "stockCurentPrice": "\u20b93464.88",
+    "exchageType": "BSE",
+    "todayProfitLoss": "-36.4",
+    "isUp": false
+  },
+  {
+    "stockName": "Tata Steel",
+    "stockCurentPrice": "\u20b9268.1",
+    "exchageType": "NSE",
+    "todayProfitLoss": "-144.38",
+    "isUp": false
+  },
+  {
+    "stockName": "Nestle",
+    "stockCurentPrice": "\u20b92654.35",
+    "exchageType": "BSE",
+    "todayProfitLoss": "+129.69",
+    "isUp": true
+  },
+  {
+    "stockName": "Hindustan Unilever",
+    "stockCurentPrice": "\u20b92499.42",
+    "exchageType": "NSE",
+    "todayProfitLoss": "+111.21",
+    "isUp": true
+  },
+  {
+    "stockName": "Cipla",
+    "stockCurentPrice": "\u20b92747.37",
+    "exchageType": "NSE",
+    "todayProfitLoss": "-84.6",
+    "isUp": false
+  },
+  {
+    "stockName": "Dr Reddy's",
+    "stockCurentPrice": "\u20b91741.31",
+    "exchageType": "BSE",
+    "todayProfitLoss": "+0.41",
+    "isUp": true
+  },
+  {
+    "stockName": "JSW Steel",
+    "stockCurentPrice": "\u20b92863.25",
+    "exchageType": "BSE",
+    "todayProfitLoss": "-90.56",
+    "isUp": false
+  },
+  {
+    "stockName": "Grasim",
+    "stockCurentPrice": "\u20b9836.18",
+    "exchageType": "BSE",
+    "todayProfitLoss": "+107.51",
+    "isUp": true
+  },
+  {
+    "stockName": "IndusInd Bank",
+    "stockCurentPrice": "\u20b92160.62",
+    "exchageType": "BSE",
+    "todayProfitLoss": "-95.12",
+    "isUp": false
+  },
+  {
+    "stockName": "UltraTech",
+    "stockCurentPrice": "\u20b9460.04",
+    "exchageType": "BSE",
+    "todayProfitLoss": "+6.36",
+    "isUp": true
+  },
+  {
+    "stockName": "Hero MotoCorp",
+    "stockCurentPrice": "\u20b91019.79",
+    "exchageType": "NSE",
+    "todayProfitLoss": "-24.89",
+    "isUp": false
+  },
+  {
+    "stockName": "Divi's Lab",
+    "stockCurentPrice": "\u20b93371.36",
+    "exchageType": "NSE",
+    "todayProfitLoss": "-83.25",
+    "isUp": false
+  },
+  {
+    "stockName": "Bajaj Auto",
+    "stockCurentPrice": "\u20b91912.74",
+    "exchageType": "BSE",
+    "todayProfitLoss": "-29.29",
+    "isUp": false
+  },
+  {
+    "stockName": "Britannia",
+    "stockCurentPrice": "\u20b92983.28",
+    "exchageType": "BSE",
+    "todayProfitLoss": "-0.18",
+    "isUp": false
+  },
+  {
+    "stockName": "Eicher Motors",
+    "stockCurentPrice": "\u20b92842.39",
+    "exchageType": "BSE",
+    "todayProfitLoss": "+99.19",
+    "isUp": true
+  },
+  {
+    "stockName": "Tata Consumer",
+    "stockCurentPrice": "\u20b93029.05",
+    "exchageType": "BSE",
+    "todayProfitLoss": "+43.4",
+    "isUp": true
+  },
+  {
+    "stockName": "Hindalco",
+    "stockCurentPrice": "\u20b91990.76",
+    "exchageType": "BSE",
+    "todayProfitLoss": "+141.19",
+    "isUp": true
+  },
+  {
+    "stockName": "BPCL",
+    "stockCurentPrice": "\u20b93377.07",
+    "exchageType": "NSE",
+    "todayProfitLoss": "-125.72",
+    "isUp": false
+  },
+  {
+    "stockName": "IOC",
+    "stockCurentPrice": "\u20b9330.58",
+    "exchageType": "BSE",
+    "todayProfitLoss": "-52.66",
+    "isUp": false
+  },
+  {
+    "stockName": "Zomato",
+    "stockCurentPrice": "\u20b9734.13",
+    "exchageType": "NSE",
+    "todayProfitLoss": "+33.09",
+    "isUp": true
+  },
+  {
+    "stockName": "Nykaa",
+    "stockCurentPrice": "\u20b91587.55",
+    "exchageType": "NSE",
+    "todayProfitLoss": "-112.89",
+    "isUp": false
+  },
+  {
+    "stockName": "Paytm",
+    "stockCurentPrice": "\u20b91086.55",
+    "exchageType": "NSE",
+    "todayProfitLoss": "-50.03",
+    "isUp": false
+  },
+  {
+    "stockName": "IRCTC",
+    "stockCurentPrice": "\u20b9117.02",
+    "exchageType": "NSE",
+    "todayProfitLoss": "-101.24",
+    "isUp": false
+  },
+  {
+    "stockName": "LIC",
+    "stockCurentPrice": "\u20b91579.04",
+    "exchageType": "NSE",
+    "todayProfitLoss": "+96.84",
+    "isUp": true
+  },
+  {
+    "stockName": "Bank of Baroda",
+    "stockCurentPrice": "\u20b9104.95",
+    "exchageType": "NSE",
+    "todayProfitLoss": "+101.73",
+    "isUp": true
+  },
+  {
+    "stockName": "PNB",
+    "stockCurentPrice": "\u20b92329.18",
+    "exchageType": "NSE",
+    "todayProfitLoss": "-16.12",
+    "isUp": false
+  },
+  {
+    "stockName": "Yes Bank",
+    "stockCurentPrice": "\u20b92627.67",
+    "exchageType": "BSE",
+    "todayProfitLoss": "-66.74",
+    "isUp": false
+  },
+  {
+    "stockName": "Vodafone Idea",
+    "stockCurentPrice": "\u20b93135.6",
+    "exchageType": "BSE",
+    "todayProfitLoss": "-55.73",
+    "isUp": false
+  }
+]
