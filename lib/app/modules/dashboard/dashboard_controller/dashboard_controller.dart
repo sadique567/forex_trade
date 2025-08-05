@@ -12,7 +12,7 @@ class DashboardController extends GetxController {
   final List<Widget> widgetOption = <Widget>[
     HomeView(),
     WatchlistViews(),
-    FundView(),
     AlertView(),
+    FundView(),
   ];
 }
