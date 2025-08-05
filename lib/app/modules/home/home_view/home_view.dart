@@ -31,36 +31,33 @@ class HomeView extends GetView<HomeController> {
       body: Column(
         children: [
           Container(
-            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+            margin: const EdgeInsets.symmetric(horizontal: 5, vertical: 5),
+            padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 5),
             decoration: BoxDecoration(
               color: Theme.of(context).cardColor,
               borderRadius: BorderRadius.circular(12),
-              // boxShadow: [
-              //   BoxShadow(
-              //     color: Colors.black.withOpacity(0.05),
-              //     blurRadius: 5,
-              //     offset: const Offset(0, 2),
-              //   ),
-              // ],
-            ),
-            child: Row(
-              children: [
-                Expanded(
-                  child: TextFormField(
-                    decoration: const InputDecoration(
-                      hintText: "Search",
-                      border: InputBorder.none,
-                      isDense: true,
-                    ),
-                    onChanged: (value) {
-                      controller.filterStock(value);
-                    },
-                    cursorColor: Colors.amber,
-                  ),
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.black,
+                  blurRadius: 1,
+                  offset: const Offset(1, 1),
                 ),
-                const SizedBox(width: 10),
-                const Icon(Icons.search, color: Colors.grey),
+                BoxShadow(
+                  color: Colors.black,
+                  blurRadius: 1,
+                  offset: const Offset(-1, -1),
+                ),
               ],
+            ),
+            child: TextFormField(
+              decoration: InputDecoration(
+                hintText: "Search",
+                prefixIcon: Icon(Icons.search),
+              ),
+              onChanged: (value) {
+                controller.filterStock(value);
+              },
+              cursorColor: Colors.amber,
             ),
           ),
 
@@ -73,6 +70,21 @@ class HomeView extends GetView<HomeController> {
               return ListView(
                 children: [
                   _Exchanger(context),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(
+                      vertical: 10.0,
+                      horizontal: 10,
+                    ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        _myButton(context, "Tranding", () {}),
+                        _myButton(context, "FX", () {}),
+                        _myButton(context, "Fx Metals", () {}),
+                      ],
+                    ),
+                  ),
+
                   ListView.builder(
                     physics: NeverScrollableScrollPhysics(),
                     shrinkWrap: true,
@@ -189,39 +201,35 @@ Widget _Exchanger(BuildContext context) {
   );
 }
 
-Widget _searchBox(BuildContext context) {
+Widget _myButton(BuildContext context, String text, VoidCallback onTap) {
   return Container(
-    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+    width: MediaQuery.sizeOf(context).width / 4,
+    height: MediaQuery.sizeOf(context).width / 7.5,
+    // padding: EdgeInsets.symmetric(horizontal: 5, vertical: 20),
     decoration: BoxDecoration(
       color: Theme.of(context).cardColor,
-      borderRadius: BorderRadius.circular(12),
-      // boxShadow: [
-      //   BoxShadow(
-      //     color: Colors.black.withOpacity(0.05),
-      //     blurRadius: 5,
-      //     offset: const Offset(0, 2),
-      //   ),
-      // ],
-    ),
-    child: Row(
-      children: [
-        Expanded(
-          child: TextFormField(
-            decoration: const InputDecoration(
-              hintText: "Search",
-              border: InputBorder.none,
-              isDense: true,
-            ),
-            onChanged: (value) {
-              // controller
-            },
-            cursorColor: Colors.amber,
-          ),
+      borderRadius: BorderRadius.circular(15),
+      // border: Border.all(width: 1, color: Colors.black),
+      boxShadow: [
+        BoxShadow(
+          color: Theme.of(context).hintColor,
+          blurRadius: 1,
+          spreadRadius: 0.5,
+          offset: Offset(-2, -2),
         ),
-        const SizedBox(width: 10),
-
-        const Icon(Icons.search, color: Colors.grey),
+        BoxShadow(
+          color: Theme.of(context).hintColor,
+          blurRadius: 1,
+          spreadRadius: 0.5,
+          offset: Offset(2, 2),
+        ),
       ],
+    ),
+    child: Center(
+      child: Text(
+        text ?? "",
+        style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
+      ),
     ),
   );
 }

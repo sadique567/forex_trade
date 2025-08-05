@@ -40,7 +40,7 @@ ThemeData lightTheme() => ThemeData(
     backgroundColor: Colors.white,
   ),
 
-  tabBarTheme: const TabBarTheme(labelColor: Colors.black),
+  tabBarTheme: const TabBarThemeData(labelColor: Colors.black),
   textTheme: const TextTheme(),
   bottomNavigationBarTheme: const BottomNavigationBarThemeData(
     unselectedItemColor: Colors.red,
@@ -65,9 +65,7 @@ ThemeData lightTheme() => ThemeData(
     ),
   ),
 
-
-dividerColor: Colors.black, 
-
+  dividerColor: Colors.black,
 );
 
 // ------------- DARK MODE ---------------------------
@@ -124,21 +122,20 @@ ThemeData darkTheme() => ThemeData(
         color: Colors.grey, // Grey border color
         width: 1.0,
       ),
-      borderRadius: BorderRadius.circular(20.0), // Rounded corners
+      borderRadius: BorderRadius.circular(12.0), // Rounded corners
     ),
     enabledBorder: OutlineInputBorder(
       borderSide: const BorderSide(
         color: Colors.grey, // Grey border color
         width: 1.0,
       ),
-      borderRadius: BorderRadius.circular(20.0),
+      borderRadius: BorderRadius.circular(12.0),
     ),
     focusedBorder: OutlineInputBorder(
       borderSide: const BorderSide(color: Colors.grey, width: 1.5),
-      borderRadius: BorderRadius.circular(20.0),
+      borderRadius: BorderRadius.circular(12.0),
     ),
   ),
 
-
-    dividerColor: Colors.white,
+  dividerColor: Colors.white,
 );
