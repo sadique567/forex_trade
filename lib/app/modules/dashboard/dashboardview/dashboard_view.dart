@@ -5,6 +5,8 @@ import 'package:forex_trade/app/utils/Colors.dart';
 import 'package:get/get.dart';
 
 class DashboardView extends GetView<DashboardController> {
+  const DashboardView({super.key});
+
   void onItemTapped(int index) {}
 
   @override

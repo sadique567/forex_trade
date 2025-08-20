@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:forex_trade/app/modules/signup_screen/signup_controller/signup_controller.dart';
-import 'package:forex_trade/app/routes/app_pages.dart';
 import 'package:forex_trade/app/utils/Colors.dart';
 import 'package:forex_trade/app/utils/button_widget.dart';
 import 'package:forex_trade/app/utils/forx_trade_Name.dart';
@@ -19,7 +19,6 @@ class SignupView extends GetView<SignupController> {
         children: [
           Center(child: AppName()),
           SizedBox(height: 25),
-
           Form(
             key: _formKeySignUp,
             child: Container(
@@ -197,6 +196,7 @@ class SignupView extends GetView<SignupController> {
                     onTap: () {
                       if (_formKeySignUp.currentState!.validate()) {
                         controller.signUp();
+                        // controller.sendOtp();
                       }
                     },
                   ),
@@ -207,7 +207,18 @@ class SignupView extends GetView<SignupController> {
                     children: [
                       InkWell(
                         onTap: () {
-                          Get.offAndToNamed(AppRoutes.LOGIN_SCREEN);
+                          // Get.offAndToNamed(AppRoutes.LOGIN_SCREEN);
+                          _dialogBuilder(
+                            context,
+                            controller: controller.otpVerification,
+                            onTap: () {
+                              print('OTP is : ${controller.sendOtp()}');
+
+                              EasyLoading.showToast(
+                                "OTP Submitted Clicked ${controller.otpVerification.text}",
+                              );
+                            },
+                          );
                         },
                         child: Text(
                           "Login",
@@ -224,4 +235,42 @@ class SignupView extends GetView<SignupController> {
       ),
     );
   }
+}
+
+Future<void> _dialogBuilder(
+  BuildContext context, {
+  VoidCallback? onTap,
+  TextEditingController? controller,
+}) {
+  return showDialog(
+    context: context,
+    builder: (BuildContext context) {
+      return AlertDialog(
+        title: Text("User Verification...."),
+        content: TextField(
+          controller: controller,
+          maxLength: 4,
+          keyboardType: TextInputType.number,
+          // Limits input to 4 characters
+          decoration: InputDecoration(
+            labelText: 'Enter 4 characters',
+            counterText: "",
+          ),
+        ),
+
+        actions: [
+          TextButton(
+            style: TextButton.styleFrom(
+              textStyle: Theme.of(context).textTheme.labelLarge,
+            ),
+            onPressed: () {
+              Navigator.of(context).pop();
+            },
+            child: Text("Cancel"),
+          ),
+          TextButton(onPressed: onTap, child: Text("Submit OTP")),
+        ],
+      );
+    },
+  );
 }

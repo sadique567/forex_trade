@@ -7,6 +7,8 @@ import 'package:forex_trade/app/utils/forx_trade_Name.dart';
 import 'package:get/get.dart';
 
 class LoginView extends GetView<LoginController> {
+  const LoginView({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -32,7 +34,6 @@ class LoginView extends GetView<LoginController> {
                     controller: controller.emailController,
                     keyboardType: TextInputType.emailAddress,
                     decoration: InputDecoration(
-                      
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(12),
                       ),
@@ -101,9 +102,14 @@ class LoginView extends GetView<LoginController> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
-                      Text(
-                        "Forget Password",
-                        style: TextStyle(color: MyColors.blue, fontSize: 16),
+                      InkWell(
+                        onTap: () {
+                          Get.toNamed(AppRoutes.DASHBOARD_SCREEN);
+                        },
+                        child: Text(
+                          "Forget Password",
+                          style: TextStyle(color: MyColors.blue, fontSize: 16),
+                        ),
                       ),
                     ],
                   ),

@@ -14,12 +14,12 @@ class MyAppName extends StatelessWidget {
 }
 
 Widget AppName() {
-  final double fontSize_Login = 34;
+  final double fontsizeLogin = 34;
   return RichText(
     text: TextSpan(
       text: "FOREX",
       style: TextStyle(
-        fontSize: fontSize_Login,
+        fontSize: fontsizeLogin,
         fontWeight: FontWeight.bold,
         color: MyColors.black,
       ),
@@ -28,7 +28,7 @@ Widget AppName() {
           text: " TRADE",
           style: TextStyle(
             color: MyColors.primaryColor,
-            fontSize: fontSize_Login,
+            fontSize: fontsizeLogin,
           ),
         ),
       ],

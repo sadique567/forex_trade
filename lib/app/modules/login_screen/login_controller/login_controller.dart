@@ -57,10 +57,6 @@ class LoginController extends GetxController {
     }
   }
 
-  @override
-  void onClose() {
-    super.onClose();
-  }
 
   // Future<void> loginaMethod() async {
   //   Map body = {

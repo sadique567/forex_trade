@@ -2,7 +2,6 @@ import 'package:forex_trade/app/API/API.dart';
 import 'package:forex_trade/app/API/api_path.dart';
 import 'package:forex_trade/app/API/base_api.dart';
 import 'package:forex_trade/app/environment/environment.dart';
-import 'package:forex_trade/app/model/commonResponse.dart';
 
 final String baseApi_forexTrade = Environment().baseConfig.baseApi;
 

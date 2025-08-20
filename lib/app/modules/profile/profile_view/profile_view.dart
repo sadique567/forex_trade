@@ -9,6 +9,8 @@ import 'package:forex_trade/app/utils/common_widget.dart';
 import 'package:get/get.dart';
 
 class ProfileView extends GetView<ProfileController> {
+  const ProfileView({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -213,8 +215,8 @@ class ProfileView extends GetView<ProfileController> {
                     subtitle: Text('Theme'.tr, style: TextStyle(fontSize: 12)),
                     trailing: Obx(() {
                       return CupertinoSwitch(
-                        activeColor: Theme.of(context).primaryColor,
-                        trackColor: Colors.blueAccent.shade100,
+                        activeTrackColor: Theme.of(context).primaryColor,
+                        inactiveTrackColor: Colors.blueAccent.shade100,
                         thumbColor: Colors.white70,
                         value: controller.mythemecontroller.isDarkMode.value,
                         onChanged: (value) {
@@ -247,10 +249,9 @@ class ProfileView extends GetView<ProfileController> {
               ),
             ),
           ),
-
           Spacer(),
           Padding(
-            padding: const EdgeInsets.symmetric(vertical: 30.0),
+            padding: const EdgeInsets.only(bottom: 10),
             child: Text("Version 0.0.01"),
           ),
           // SizedBox(height: 25),

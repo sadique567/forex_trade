@@ -6,6 +6,8 @@ import 'package:forex_trade/app/utils/common_widget.dart';
 import 'package:get/get.dart';
 
 class FundView extends GetView<FundController> {
+  const FundView({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,7 +19,7 @@ class FundView extends GetView<FundController> {
       body: Column(
         children: [
           Container(
-            // decoration: BoxDecoration(color: Theme.of(context).cardColor),
+            decoration: BoxDecoration(color: Theme.of(context).cardColor),
             child: Column(
               children: [
                 ListTile(
@@ -31,7 +33,7 @@ class FundView extends GetView<FundController> {
                     style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                   ),
                 ),
-                Divider(height: 1),
+                // Divider(height: 1),
                 ListTile(
                   title: Text(
                     "Available Trade",
@@ -59,13 +61,14 @@ class FundView extends GetView<FundController> {
                     style: TextStyle(fontSize: 16, fontWeight: FontWeight.w300),
                   ),
                   trailing: Text(
-                    "13361.77",
+                    "10500",
                     style: TextStyle(fontSize: 16, fontWeight: FontWeight.w300),
                   ),
                 ),
               ],
             ),
           ),
+
           Spacer(),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 20),
@@ -74,7 +77,7 @@ class FundView extends GetView<FundController> {
                 ElevatedButton(
                   onPressed: () {},
                   style: ElevatedButton.styleFrom(
-                    padding: EdgeInsets.symmetric(horizontal: 40, vertical: 6),
+                    padding: EdgeInsets.symmetric(horizontal: 35, vertical: 6),
 
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(25),
@@ -95,7 +98,7 @@ class FundView extends GetView<FundController> {
                 ElevatedButton(
                   onPressed: () {},
                   style: ElevatedButton.styleFrom(
-                    padding: EdgeInsets.symmetric(horizontal: 40, vertical: 6),
+                    padding: EdgeInsets.symmetric(horizontal: 35, vertical: 6),
 
                     // custom blue color
                     shape: RoundedRectangleBorder(

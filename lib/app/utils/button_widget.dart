@@ -15,7 +15,7 @@ class MyButton extends StatelessWidget {
   final EdgeInsetsGeometry? padding;
 
   const MyButton({
-    Key? key,
+    super.key,
     this.buttonName,
     this.onTap,
     this.fontSize,
@@ -26,7 +26,7 @@ class MyButton extends StatelessWidget {
     this.padding,
     this.width,
     this.height,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

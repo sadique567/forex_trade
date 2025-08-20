@@ -24,7 +24,7 @@ ThemeData lightTheme() => ThemeData(
   scaffoldBackgroundColor: const Color(0xffFFFFFF),
   canvasColor: const Color(0xffF4F3F5),
   radioTheme: RadioThemeData(
-    fillColor: MaterialStateColor.resolveWith(
+    fillColor: WidgetStateColor.resolveWith(
       (states) => const Color(0xff0004FF),
     ),
     // (states) => const Color(0xff04b98c)),
@@ -46,7 +46,7 @@ ThemeData lightTheme() => ThemeData(
     unselectedItemColor: Colors.red,
     selectedItemColor: Color(0xff008EF9),
   ),
-  cardColor: Colors.white70,
+  cardColor: Color(0xfff6f6f5),
   shadowColor: Color(0xFF1B1B1B),
   inputDecorationTheme: InputDecorationTheme(
     fillColor: const Color(0xffF4F3F5),
@@ -87,7 +87,7 @@ ThemeData darkTheme() => ThemeData(
   scaffoldBackgroundColor: const Color(0xff1B1B1B),
   canvasColor: const Color(0xff242426),
   radioTheme: RadioThemeData(
-    fillColor: MaterialStateColor.resolveWith(
+    fillColor: WidgetStateColor.resolveWith(
       (states) => const Color(0xffFFB700),
     ),
   ),
@@ -111,9 +111,7 @@ ThemeData darkTheme() => ThemeData(
 
   textButtonTheme: TextButtonThemeData(
     style: ButtonStyle(
-      foregroundColor: MaterialStateProperty.all<Color>(
-        const Color(0xffFFB700),
-      ),
+      foregroundColor: WidgetStateProperty.all<Color>(const Color(0xffFFB700)),
     ),
   ),
   inputDecorationTheme: InputDecorationTheme(

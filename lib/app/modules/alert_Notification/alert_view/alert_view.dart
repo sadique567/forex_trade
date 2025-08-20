@@ -3,6 +3,8 @@ import 'package:forex_trade/app/modules/alert_Notification/alert_controller/aler
 import 'package:get/get.dart';
 
 class AlertView extends GetView <AlertController>{
+  const AlertView({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

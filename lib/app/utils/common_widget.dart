@@ -1,5 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:forex_trade/app/modules/buy/buy_view/buy_view.dart';
 import 'package:forex_trade/app/utils/button_widget.dart';
 import 'package:get/route_manager.dart';
 
@@ -41,7 +41,9 @@ Widget buySell(BuildContext context, {VoidCallback? onTap}) {
         height: MediaQuery.sizeOf(context).width / 12,
         borderColor: Colors.transparent,
 
-        onTap: () {},
+        onTap: () {
+          bottomModel(context);
+        },
       ),
       SizedBox(width: MediaQuery.sizeOf(context).width / 15),
       MyButton(
